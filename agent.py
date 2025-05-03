@@ -117,11 +117,11 @@ def giveMeDecision(inputdata:ResumeChecklist, role: str ):
         "skills": ["Multimedia", "Digital marketing","ad sales revenue","print media"],
         "experience_years": 10,
         "education_level": "Master's",
-        "last_job_role": "Senior Lead Sales Analyst",
+        "last_job_role": "Senior Digital Marketing Analyst",
         "salary_expectation": 150000,
         "projects_count": 10
         }""" },
-        {"role": "assistant", "content": "Role is Senior Tech leader manager"+""" { "decision": "Hire","reason": "Candidate has sufficient experience in a variety of programming roles and leadership roles."""},
+        {"role": "assistant", "content": "Role is Senior Digital Marketer"+""" { "decision": "Hire","reason": "Candidate has sufficient experience in a variety of marketing roles and leadership roles."""},
         {"role": "user", "content": """"Example input: {
         "skills": ["Multimedia", "Digital marketing","ad sales revenue","print media"],
         "experience_years": 2,
