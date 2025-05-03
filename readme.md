@@ -20,6 +20,8 @@ OPENAI_API_BASE=https://your-endpoint.openai.azure.com
 
 ## :running: Running server
 
+The server has the resume parsing functionality
+
 python3 server.py
 
 Visit the interactive API docs at:
@@ -27,6 +29,8 @@ Visit the interactive API docs at:
 
 
 ## :fire: Running agent
+The agent uses the MCP agent to call help with resume parsing. After that it uses it's own logic to do hiring based on parsed input.
+
 python3 agent.py
 
 
