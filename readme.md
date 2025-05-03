@@ -16,9 +16,9 @@ setup myenv.env with necessary environment variable
 AZURE_OPENAI_KEY=your-key-here
 AZURE_OPENAI_MODEL=gpt-4
 OPENAI_API_BASE=https://your-endpoint.openai.azure.com
+```
 
-
-### Running server
+### :running: Running server
 
 python3 server.py
 
@@ -26,7 +26,7 @@ Visit the interactive API docs at:
 👉 `http://localhost:8000/docs`
 
 
-### Running agent
+### :fire: Running agent
 python3 agent.py
 
 
