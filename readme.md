@@ -14,11 +14,11 @@ setup myenv.env with necessary environment variable
 
 ```dotenv
 AZURE_OPENAI_KEY=your-key-here
-AZURE_OPENAI_MODEL=gpt-4
+AZURE_OPENAI_DEPLOYMENT=your-deployment-model
 OPENAI_API_BASE=https://your-endpoint.openai.azure.com
 ```
 
-### :running: Running server
+## :running: Running server
 
 python3 server.py
 
@@ -26,7 +26,7 @@ Visit the interactive API docs at:
 👉 `http://localhost:8000/docs`
 
 
-### :fire: Running agent
+## :fire: Running agent
 python3 agent.py
 
 
@@ -34,7 +34,8 @@ python3 agent.py
 
 ## 📌 Roadmap
 
-* [x] Resume parsing (single)
-* [x] Recruiter tool integration
+* [x] Resume parsing 
+* [x] An agent that makes decision on resume
+* [ ] pytest integration
 * [ ] Add api key for security. Also explore Oauth2
 

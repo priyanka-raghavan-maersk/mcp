@@ -147,7 +147,7 @@ def giveMeDecision(inputdata:ResumeChecklist, role: str ):
         resume_data = response.choices[0].message.content 
         #return resume data as DescisionHireOutput object
         if isinstance(resume_data, str):
-            resume_data = DescisionHireOutput.parse_raw(resume_data)
+            resume_data = DescisionHireOutput.model_validate_json(resume_data)
         elif isinstance(resume_data, dict):
             resume_data = DescisionHireOutput(**resume_data)
         else:
@@ -176,7 +176,7 @@ async def main():
     resumes.append(test1)
     role1= "Senior Software Engineer"
     roles.append(role1)
-    test2= "Sunil Abraham has 10 years of experience in sales and marketing. He holds a Master's degree in multimedia management. He has lead the sales and marketing teams and drove a lot of sales initiatives with great use of multimedia and marketing to capture share of NAM. His last role was Senior Lead Sales Analyst. He expects a salary of $120,000 and has led 20 projects."
+    test2= "Sunil Abraham has 4 years of experience in sales and marketing. He holds a Master's degree in multimedia management. He has lead the sales and marketing teams and drove a lot of sales initiatives with great use of multimedia and marketing to capture share of NAM. His last role was Senior Lead Sales Analyst. He expects a salary of $150,000 and has led 5 projects."
     resumes.append(test2)
     role2= "Lead Marketing Analyst"
     roles.append(role2)
