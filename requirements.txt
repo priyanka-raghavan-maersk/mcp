@@ -1,0 +1,9 @@
+fastapi-mcp
+fastapi
+pytest
+pandas
+scipy
+openai
+python-dotenv
+pydantic
+openai_agents
